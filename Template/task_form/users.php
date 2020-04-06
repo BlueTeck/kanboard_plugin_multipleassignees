@@ -1,0 +1,1 @@
+<label for="form-user-assignee"><?php echo t('More assignees:'); ?></label>
