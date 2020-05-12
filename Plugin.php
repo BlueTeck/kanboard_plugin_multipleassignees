@@ -4,6 +4,7 @@ namespace Kanboard\Plugin\MultipleAssignees;
 
 use Kanboard\Core\Plugin\Base;
 use Kanboard\Core\Translator;
+use Kanboard\Plugin\MultipleAssignees\Helper\FormHelper;
 
 class Plugin extends Base
 {
@@ -18,6 +19,9 @@ class Plugin extends Base
         // task creation and modification
         $this->template->hook->attach('template:task:form:second-column', 'MultipleAssignees:task_form/groups');
         $this->template->hook->attach('template:task:form:second-column', 'MultipleAssignees:task_form/users');
+
+        //Helpers
+        $this->helper->register('MultipleAssigneesFormHelper', FormHelper::class);
 
         //Board
         // filter dropdown
