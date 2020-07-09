@@ -1,5 +1,9 @@
 # Kanboard Plugin MultipleAssignees
 
+⚠ Early development version ⚠ 
+
+⚠ DO NOT USE ⚠ 
+
 Assign multiple users or groups to a task.
 
 This plugin was inspired by [creecros Group_assign](https://github.com/creecros/Group_assign) plugin.
